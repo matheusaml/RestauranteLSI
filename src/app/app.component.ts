@@ -1,3 +1,5 @@
+import { CarrinhoPage } from './../pages/carrinho/carrinho';
+import { CardapioPage } from './../pages/cardapio/cardapio';
 import { SobrePage } from './../pages/sobre/sobre';
 import { AdministracaoPage } from './../pages/administracao/administracao';
 import { CadastroPage } from './../pages/cadastro/cadastro';
@@ -26,7 +28,9 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Administracao', component: AdministracaoPage},
-      { title: 'Sobre', component: SobrePage}
+      { title: 'Sobre', component: SobrePage},
+      { title: 'Cardapio', component: CardapioPage},
+      { title: 'Carrinho', component: CarrinhoPage}
     ];
 
   }

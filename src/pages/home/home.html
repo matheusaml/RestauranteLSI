@@ -8,17 +8,23 @@
 </ion-header>
 
 <ion-content padding class="bg">
-  
-  <h3>Restaurante</h3>
+    <ion-row><ion-col style="text-align:center">
+        <img src="../../assets/bomdemais.png">
+        </ion-col></ion-row>
+    <ion-grid>
+        <ion-row><ion-col style="text-align:center">
+      </ion-col></ion-row>
+      <ion-row><ion-col style="text-align:center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod semper tortor nec sodales. Proin sagittis, urna ut rhoncus vehicula, ante tellus ornare tellus, vel sollicitudin mi ligula et purus. Praesent eleifend dapibus gravida. Quisque fermentum urna sed dolor aliquam, a facilisis eros mollis. Aenean commodo consequat orci, eget maximus ipsum egestas in. Nulla facilisi. Fusce pharetra hendrerit placerat. Donec eu tortor porttitor, hendrerit erat ac, mattis sapien. Quisque varius pretium orci id placerat. Proin pharetra est gravida arcu interdum, quis tempor felis accumsan. Quisque justo erat, tempor id ipsum et, lobortis scelerisque libero. Curabitur consectetur sapien magna, eget pharetra odio suscipit vel. Vivamus sit amet gravida ligula, sit amet accumsan nibh.</p><br>
+        <button icon-start class="botao botaocadastre" (click)="signOut()">
+            <ion-icon name="home"> </ion-icon>
+            Sair
+          </button>
+       
+        </ion-col>
+      </ion-row>
+      </ion-grid>
 
-  <p>
-    Restaurante
-  </p>
-
-  <button ion-button block color="primary" (click)="signOut()">
-      Sair
-    </button>
-
-
+      <div #map id="map"></div> 
   
 </ion-content>

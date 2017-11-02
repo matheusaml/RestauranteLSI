@@ -2,6 +2,37 @@ page-login {
 
 }
 
+
 .bg{
     font-family:Helvetica;
+    background-color: white;
+}
+
+.botaologin{
+    background-color: #6a2672;
+    opacity: 100%;
+    color: white;
+}
+
+.botao{
+    margin-top:4px;
+    padding:15px;
+    font-size: 15px;
+}
+
+.botaocadastre{ 
+    background-color: #6a2672;
+    color: white;
+}
+
+.botaocadastre:active{
+    background-color: white;
+    color:black;
+}
+.botaocadastre:onclick{
+    background-color: white;
+}
+
+.yellow{
+    background-color: #f8e9b6;
 }
