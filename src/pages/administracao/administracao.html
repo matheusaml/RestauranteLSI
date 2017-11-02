@@ -18,11 +18,11 @@
   <p>Abaixo, coloque o nome do item, o tipo, a descrição e o preço do mesmo.</p>
 
     <ion-list>
-        <ion-item>
+        <ion-item class="yellow"> 
           <ion-label fixed>Nome do item a inserir no cardápio:</ion-label>
           <ion-input type="text" [(ngModel)]="nome"></ion-input>
         </ion-item>
-        <ion-item>
+        <ion-item class="yellow">
           <ion-label>Tipo de item:</ion-label>
           <ion-select [(ngModel)]="tipo">
               <ion-option value="prato">Prato</ion-option>
@@ -32,13 +32,15 @@
           </ion-select>
         </ion-item>
         <ion-label fixed>Descrição:</ion-label>
-        <ion-input type="text" [(ngModel)]="desc"></ion-input>
+        <ion-input class="yellow" type="text" [(ngModel)]="desc"></ion-input>
         <ion-label fixed>Preço:</ion-label>
-        <ion-input type="text" [(ngModel)]="preco"></ion-input>
+        <ion-input class="yellow" type="text" [(ngModel)]="preco"></ion-input>
         
+        <ion-col style="text-align:center">
         <ion-item>
-          <button ion-button (click)="cadastrarItem()">Cadastrar</button>
+          <button class="botao botaocadastrar" (click)="cadastrarItem()">Cadastrar</button>
         </ion-item>  
+      </ion-col>
         
      </ion-list>
 

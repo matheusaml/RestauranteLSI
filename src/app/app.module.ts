@@ -1,3 +1,6 @@
+import { AngularFireDatabase } from 'angularfire2/database-deprecated';
+import { CarrinhoPage } from './../pages/carrinho/carrinho';
+import { CardapioPage } from './../pages/cardapio/cardapio';
 import { SobrePage } from './../pages/sobre/sobre';
 import { AdministracaoPage } from './../pages/administracao/administracao';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -12,13 +15,14 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Geolocation } from '@ionic-native/geolocation';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from 'angularfire2';
 import { auth } from '../providers/auth/auth';
 import { FirebaseProvider } from '../providers/firebase/firebase';
-
+import { CardapioServProvider } from '../providers/cardapio-serv/cardapio-serv';
 
 var config = {
   apiKey: "AIzaSyBITZurRDoUk6fnA9NftDytegR5c32yVMk",
@@ -42,7 +46,9 @@ const cloudSettings: CloudSettings = {
     LoginPage,
     CadastroPage,
     AdministracaoPage,
-    SobrePage
+    SobrePage,
+    CardapioPage,
+    CarrinhoPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +65,9 @@ const cloudSettings: CloudSettings = {
     LoginPage,
     CadastroPage,
     AdministracaoPage,
-    SobrePage
+    SobrePage,
+    CardapioPage,
+    CarrinhoPage
   ],
 
   providers: [
@@ -68,6 +76,9 @@ const cloudSettings: CloudSettings = {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     auth,
     FirebaseProvider,
+    CardapioServProvider,
+    AngularFireDatabase,
+    Geolocation
 
   ]
 })
