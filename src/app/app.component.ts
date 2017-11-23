@@ -9,6 +9,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CadastroItemPage } from '../pages/cadastro-item/cadastro-item';
+import { EditarItemPage } from '../pages/editar-item/editar-item';
+import { ListaItemPage } from '../pages/lista-item/lista-item';
+import { CardapioPessoaPage } from '../pages/cardapiopessoa/cardapiopessoa';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,10 +31,12 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Administracao', component: AdministracaoPage},
+      { title: 'Cadastrar Item', component: CadastroItemPage},
+      { title: 'Cardápio Administrativo', component: ListaItemPage},
       { title: 'Sobre', component: SobrePage},
-      { title: 'Cardapio', component: CardapioPage},
-      { title: 'Carrinho', component: CarrinhoPage}
+      { title: 'Cardapio Pessoa', component: CardapioPessoaPage}
+      
+           
     ];
 
   }

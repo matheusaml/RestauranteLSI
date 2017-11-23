@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Modificar {{novoItem.nome}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item class="yellow">
+        <ion-label floating>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="novoItem.nome"></ion-input>
+    </ion-item>
+
+    <ion-item class="yellow">
+        <ion-label floating>Tipo</ion-label>
+        <ion-input type="text" [(ngModel)]="novoItem.tipo"></ion-input>
+    </ion-item>
+
+    <ion-item class="yellow">
+        <ion-label floating>Descricao</ion-label>
+        <ion-input type="text" [(ngModel)]="novoItem.descricao"></ion-input>
+    </ion-item>
+
+    <ion-item class="yellow">
+        <ion-label floating>Preco</ion-label>
+        <ion-input type="text" [(ngModel)]="novoItem.preco"></ion-input>
+    </ion-item>
+
+    <ion-item class="yellow">
+        <ion-label floating>Quantidade</ion-label>
+        <ion-input type="text" [(ngModel)]="novoItem.quantidade"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Foto</ion-label>
+        <ion-input type="string" [(ngModel)]="novoItem.itemNumber"></ion-input>
+    </ion-item>
+
+    <button class="botaocadastrar" ion-button block (click)="editarNovoItem(novoItem)">Confirmar</button>
+</ion-content>
