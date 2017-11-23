@@ -25562,11 +25562,53 @@ ion-navbar.toolbar {
   background-color: #f8e9b6;
 }
 
+.bg {
+  font-family: Helvetica;
+  background-color: #6a2672;
+}
+
+.botaocadastrar {
+  background-color: #6a2672;
+  opacity: 100%;
+  color: white;
+}
+
+.botao {
+  margin-top: 4px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.yellow {
+  background-color: #f8e9b6;
+}
+
 page-cardapio {
   background-color: #f8e9b6;
 }
 
 .bg {
+  background-color: #f8e9b6;
+}
+
+page-editar-item .bg {
+  font-family: Helvetica;
+  background-color: #6a2672;
+}
+
+page-editar-item .botaocadastrar {
+  background-color: #6a2672;
+  opacity: 100%;
+  color: white;
+}
+
+page-editar-item .botao {
+  margin-top: 4px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+page-editar-item .yellow {
   background-color: #f8e9b6;
 }
 
