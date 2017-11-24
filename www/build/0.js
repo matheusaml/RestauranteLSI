@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 995:
+/***/ 1001:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarrodecomprasPageModule", function() { return CarrodecomprasPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SobrePageModule", function() { return SobrePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__carrodecompras__ = __webpack_require__(1001);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sobre__ = __webpack_require__(223);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CarrodecomprasPageModule = (function () {
-    function CarrodecomprasPageModule() {
+var SobrePageModule = (function () {
+    function SobrePageModule() {
     }
-    return CarrodecomprasPageModule;
+    return SobrePageModule;
 }());
-CarrodecomprasPageModule = __decorate([
+SobrePageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__carrodecompras__["a" /* CarrodecomprasPage */],
+            __WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__carrodecompras__["a" /* CarrodecomprasPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */]),
         ],
     })
-], CarrodecomprasPageModule);
+], SobrePageModule);
 
-//# sourceMappingURL=carrodecompras.module.js.map
+//# sourceMappingURL=sobre.module.js.map
 
 /***/ })
 
