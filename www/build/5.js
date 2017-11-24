@@ -1,14 +1,14 @@
 webpackJsonp([5],{
 
-/***/ 994:
+/***/ 996:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardapiopessoaPageModule", function() { return CardapiopessoaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditarItemModulePage", function() { return EditarItemModulePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cardapiopessoa__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__editar_item__ = __webpack_require__(133);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CardapiopessoaPageModule = (function () {
-    function CardapiopessoaPageModule() {
+var EditarItemModulePage = (function () {
+    function EditarItemModulePage() {
     }
-    return CardapiopessoaPageModule;
+    return EditarItemModulePage;
 }());
-CardapiopessoaPageModule = __decorate([
+EditarItemModulePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
-        declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__cardapiopessoa__["a" /* CardapioPessoaPage */],
-        ],
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cardapiopessoa__["a" /* CardapioPessoaPage */]),
-        ],
+        declarations: [__WEBPACK_IMPORTED_MODULE_2__editar_item__["a" /* EditarItemPage */]],
+        imports: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__editar_item__["a" /* EditarItemPage */])],
+        entryComponents: [__WEBPACK_IMPORTED_MODULE_2__editar_item__["a" /* EditarItemPage */]]
     })
-], CardapiopessoaPageModule);
+], EditarItemModulePage);
 
-//# sourceMappingURL=cardapiopessoa.module.js.map
+//# sourceMappingURL=editar-item.module.js.map
 
 /***/ })
 

@@ -7,12 +7,31 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CarrinhoPage</ion-title>
+    <ion-title>Descrição</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+    <ion-card>
+        <img src="assets/salmao.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            {{param}}
+            </ion-card-title>
+          <p>
+            Preço: R$ {{param2}},00
+          </p>
+          <h3>Descrição: {{param3}}</h3>
+        </ion-card-content>
+      </ion-card>
+
+        <ion-fab bottom right>
+            <button color="secondary" ion-fab class="fab fab-ios fab-ios-danger" (click)="showToastWithCloseButton()"><ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon><span class="button-inner"><ion-icon name="add" role="img" class="icon icon-ios ion-ios-add" aria-label="add"></ion-icon></span><div class="button-effect"></div></button>
+          </ion-fab>
+
+      
 
 </ion-content>

@@ -1,4 +1,3 @@
-import { Item } from './../../pages/administracao/administracao';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';

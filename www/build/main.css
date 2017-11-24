@@ -25538,31 +25538,6 @@ ion-navbar.toolbar {
 }
 
 .bg {
-  background-color: green;
-}
-
-.bg {
-  font-family: Helvetica;
-  background-color: #6a2672;
-}
-
-.botaocadastrar {
-  background-color: #6a2672;
-  opacity: 100%;
-  color: white;
-}
-
-.botao {
-  margin-top: 4px;
-  padding: 15px;
-  font-size: 15px;
-}
-
-.yellow {
-  background-color: #f8e9b6;
-}
-
-.bg {
   font-family: Helvetica;
   background-color: #6a2672;
 }
