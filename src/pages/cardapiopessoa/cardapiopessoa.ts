@@ -1,10 +1,10 @@
+import { CarrinhoPage } from './../carrinho/carrinho';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database-deprecated';
 import { Item } from '../../models/item/Item';
 import { EditarItemPage } from '../editar-item/editar-item';
 import { CadastroItemPage } from '../cadastro-item/cadastro-item';
-import { CarrinhoPage } from '../carrinho/carrinho';
 
 @IonicPage()
 @Component({
@@ -15,25 +15,16 @@ import { CarrinhoPage } from '../carrinho/carrinho';
 export class CardapioPessoaPage {
 
   Item$: FirebaseListObservable<Item[]>
+  param: string = "";
+  param2: string = ""; 
+  param3: string = ""; 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private database: AngularFireDatabase, private actionSheetCtrl: ActionSheetController) {
     this.Item$ = this.database.list('Lista de Items');
   }
 
   selecionarNovoItem(novoItem: Item) {
-    this.actionSheetCtrl.create({
-      title: `${novoItem.nome}`,
-      buttons: [
-        {
-          text: 'Adicionar',
-          handler: () => {
-            this.navCtrl.push(CarrinhoPage,
-              { novoItemId: novoItem.$key });
-
-          }
-        }
-      ]
-    }).present();
+    this.navCtrl.push(CarrinhoPage, { 'param' : novoItem.nome, 'param2' : novoItem.preco, 'param3' : novoItem.descricao});
   }
 
   cadastroPage() {

@@ -1,3 +1,4 @@
+import { RelatoriosPage } from './../pages/relatorios/relatorios';
 import { CardapioPessoaPage } from './../pages/cardapiopessoa/cardapiopessoa';
 import { ListaItemPage } from './../pages/lista-item/lista-item';
 import { EditarItemPage } from './../pages/editar-item/editar-item';
@@ -6,7 +7,6 @@ import { AngularFireDatabase } from 'angularfire2/database-deprecated';
 import { CarrinhoPage } from './../pages/carrinho/carrinho';
 import { CardapioPage } from './../pages/cardapio/cardapio';
 import { SobrePage } from './../pages/sobre/sobre';
-import { AdministracaoPage } from './../pages/administracao/administracao';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { LoginPage } from './../pages/login/login';
@@ -27,6 +27,7 @@ import { AngularFireModule } from 'angularfire2';
 import { auth } from '../providers/auth/auth';
 import { FirebaseProvider } from '../providers/firebase/firebase';
 import { CardapioServProvider } from '../providers/cardapio-serv/cardapio-serv';
+import { CarrodecomprasPage } from '../pages/carrodecompras/carrodecompras';
 
 var config = {
   apiKey: "AIzaSyBITZurRDoUk6fnA9NftDytegR5c32yVMk",
@@ -49,14 +50,15 @@ const cloudSettings: CloudSettings = {
     HomePage,
     LoginPage,
     CadastroPage,
-    AdministracaoPage,
     SobrePage,
     CardapioPage,
     CarrinhoPage,
     CadastroItemPage,
     EditarItemPage,
     ListaItemPage,
-    CardapioPessoaPage
+    CardapioPessoaPage,
+    RelatoriosPage,
+    CarrodecomprasPage
   ],
   imports: [
     BrowserModule,
@@ -72,14 +74,15 @@ const cloudSettings: CloudSettings = {
     HomePage,
     LoginPage,
     CadastroPage,
-    AdministracaoPage,
     SobrePage,
     CardapioPage,
     CarrinhoPage,
     CadastroItemPage,
     EditarItemPage,
     ListaItemPage,
-    CardapioPessoaPage
+    CardapioPessoaPage,
+    RelatoriosPage,
+    CarrodecomprasPage
   ],
 
   providers: [

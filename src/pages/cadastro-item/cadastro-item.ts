@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database-deprecated';
-import { Item } from '../../models/item/item';
+import { Item } from '../../models/item/Item';
 import { EditarItemPage } from '../editar-item/editar-item';
 
 @IonicPage()
